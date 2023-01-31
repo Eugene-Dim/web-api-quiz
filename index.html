@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Timed JavaScript Quiz</title>
+</head>
+<body>
+    <header>
+        <div id="hof" >View High Scores</div>
+        <div>Time Remaining: <span id='countdown'>60</span></div>
+    </header>
+
+    <main>
+            <div id="intro">
+                <h1>Coding Quiz Challenge</h1><br/>
+                <p>Test your basic coding knowledge. Try to answer each question within the time limit. Wrong answers will penalize your score/time by ten seconds.
+                </p><br/>
+                <div>
+                    <button id="start" class="start-btn">Start Quiz!</button>
+                </div>
+            </div>
+         
+            <div id="container">
+                <div id="quesCards" class="hide">
+                    <h1 id="questions"></h1>
+                    <div id="ansBtn" class="btn-grid"></div>
+                    <hr>
+                    <div id="results"></div>
+                </div>
+              
+                <div id="quiz-end" class="hide">
+                    <h1>Finished</h1>
+                    <h2>Your final score is: <span id="final-score"></span>.</h2>
+                    <form id="score-form">
+                        <label for="initials">Enter your initials</label>
+                        <input type="text" id="initials" size="5" maxlength="3" placeholder="" /> 
+                        <button id="submit">Submit</button>
+                    </form>
+                </div>
+            
+                <div id="hall-of-fame" class="hide">
+                    <h1>High Scores</h1>
+                    <ol id="scores-list"></ol>
+                    <div id="hof-btns">
+                        <button id="go-back">Go Back</button>
+                        <button id="clear">Clear</button>
+                    </div>
+                </div>
+            </div>
+            </main>
+            <script src="./assets/script.js"></script>
+        </body>
+    </html>
